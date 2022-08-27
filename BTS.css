@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gamja Flower';
+    background-color:#aaa9ad;
 }
 
 body {
@@ -18,20 +19,20 @@ header {
     display: flex;
     justify-content:space-between;
     align-items: center;
-    padding: 5rem;
+    padding: 3rem;
     background: url('BTSImages/Group4.jpg') no-repeat center;
 }
 
 /* Navigation */
 nav a {
     display: flex;
-    justify-content: left;
+    flex-direction: column;
     text-decoration: none;
     -webkit-text-fill-color: #5024e1;
     -webkit-text-stroke: 1px black;
     margin: 0 0.5rem;
-    font-size: 2vw;
-}
+    font-size: 2rem;
+}    
 
 /*Nav Hover effect */
 nav a:hover {
@@ -39,21 +40,6 @@ nav a:hover {
     transform: scale(1.1)
 }
 
-/* Back to top */
-.button {
-    display: inline-block;
-    font-size: 1rem;
-    flex-direction: row-reverse;
-    text-decoration: none;
-    border: 2px solid #711cfa;
-    padding: 0, 0.5rem;
-    -webkit-text-stroke: 0.05rem black;
-}
-
-.btn-teal {
-    color:#711cfa;
-    border-color: #711cfa;
-}
 /* Title */
 #title {
     -webkit-text-fill-color:#5024e1;
@@ -61,50 +47,58 @@ nav a:hover {
     font-size: 2.5rem;
     font-weight: normal;
     text-align: center;
-    margin: 0;
 }
 
 /* Main */
-#main h1 {
+#Intro h1, h2 {
     -webkit-text-fill-color:#654eb0e4;
     -webkit-text-stroke: 0.05rem black;
     font-size: 2.5rem;
     font-weight: normal;
-    text-align: center;
+    text-align: left;
     margin: 0;
 }
 
-#main h2, #main h3 {
+#Intro p {
+    color: black;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: center;
+}
+#disc h2, #main h3 {
     color: black;
     font-size: 2.25rem;
     font-weight: bold;
     text-align: center;
 }
 
-#main p {
-    color: black;
-    font-size: 1.3rem;
-    font-weight: normal;
-    text-align: center;
-}
-
-/* Hero */
-#hero {
+#members {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-#hero img {
-    width: 15vw;
-    background: cover;
+/* Back to top */
+.button {
+    display: inline-block;
+    font-size: 1rem;
+    text-decoration: none;
+    border: 2px solid #711cfa;
+    padding: 0, 0.5rem;
+    -webkit-text-stroke: 0.05rem black;
+}
+
+.btn-purple {
+    color:#711cfa;
+    border-color: #711cfa;
+    display: inline-block;
+    align-items: center;
 }
 
 /* Copyright */
 #Copyright {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 1rem;
 }
