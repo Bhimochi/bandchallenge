@@ -62,29 +62,21 @@ nav a:hover {
 /* Intro */
 #Intro p {
     color: black;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: normal;
     text-align: center;
 }
-#disc h2, #disc h3 {
-    color: black;
-    font-size: 2.25rem;
-    font-weight: bold;
-    text-align: center;
-}
+
 
 /* Biography */
-#members {
+#members, #members p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-
-#members p {
-    display: flex;
-    justify-content: center;
+    align-content: center;
     font-size: 1.5rem;
 }
+
 #RM, #Jin, #Suga, #J-Hope, #Jimin, #V, #JK {
     position: relative;
     display: flex;
@@ -94,21 +86,56 @@ nav a:hover {
     border-radius: 50%  
 }   
 
+#Album-1 p, #Album-2 p, #Album-3 p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    font-weight: bold;
+}
+
+#Album1-img, #Album2-img, #Album3-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#Track1 ol, #Track2 ol, #Track3 ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.2rem;
+}
+#DISC-1 h3, #DISC-2 h3, #DISC-3 h3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+    
+#DISC-1 ol, #DISC-2 ol, #DISC-3 ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.2rem;
+}
+
 /* Back to top */
 .button {
     display: inline-block;
     font-size: 1rem;
     text-decoration: none;
-    border: 2px solid #711cfa;
-    padding: 0, 0.5rem;
     -webkit-text-stroke: 0.05rem black;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .btn-purple {
     color:#711cfa;
-    border-color: #711cfa;
-    display: inline-block;
-    align-items: center;
 }
 
 /* Copyright */
@@ -116,5 +143,6 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    margin-bottom: 100;
+    margin-top: auto;
 }
